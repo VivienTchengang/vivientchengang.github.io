@@ -176,18 +176,18 @@ nav.banner a{
     }
 
     .tiles a.FT{
-        background-image: url("/assets/formula.jpg");
+        background-image: url("assets/formula.jpg");
         background-position: 50%;
         background-repeat: no-repeat;
     }
 
     .tiles a.KT{
-        background-image: url("/assets/karting.jpg");
+        background-image: url("assets/karting.jpg");
         background-repeat: no-repeat;
     }
 
     .tiles a.MC{
-        background-image: url("/assets/mecanique.jpg");
+        background-image: url("assets/mecanique.jpg");
         background-position: 60%;
         background-repeat: no-repeat;
     }
