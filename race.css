@@ -1,0 +1,194 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+/*Layout*/
+html{
+    margin: 0 0;
+    padding: 0 0;
+    width: 100%;
+    height: 100%; 
+}
+
+body{
+    margin: 0 0;
+    padding: 0 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Montserrat";
+    background-color: #f0f0f0;
+}
+
+h1{
+    font-style: oblique;
+}
+
+h1 em{
+    color: #F29400;
+}
+
+.main h1{
+    padding-left: 3%;
+}
+
+.main h2{
+    padding-left: 3%;
+    padding-bottom: 0;
+    color: #F29400;
+}
+
+nav.banner{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 10%;
+}
+
+nav.banner a{
+    padding-left: 10px;
+    transition: .5s;
+}
+
+.side-nav{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 25px;
+    transition: .5s;
+    padding-top: 60px;
+}
+
+.side-nav a{
+    padding: 0 0 10px 10%;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 700;
+    color: darkgray;
+    display: block;
+    transition: .2s;
+}
+
+.side-nav a:hover{
+    color: white;
+    font-style: oblique;
+    padding-left: 15%;
+}
+
+.side-nav a.btn-close{
+    color: white;
+    position: absolute;
+    top: 6px;
+    right: 25px;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.side-nav a.btn-close:hover{
+    font-style: normal;
+    padding-left: 25px;
+    color: #F29400;
+}
+
+.description{
+    width: 67%;
+}
+
+.description p{
+    text-align: justify;
+    font-weight: 700;
+    padding: 0 4%;
+}
+
+.description p em{
+    color: #F29400;
+}
+
+.description a{
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    margin-left: 4%;
+    padding: 5px;
+    background-color: #F29400;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.description a:hover{
+    padding: 5px 20px;
+}
+
+
+.tiles{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+}
+
+.main{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+    align-items: flex-end;
+    overflow: scroll;
+}
+
+.tiles h2{
+    color: #f0f0f0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);;
+    padding-left: 1%;
+}
+
+.tiles a{
+    transition: .2s;
+    height:85%;
+    width: 28%;
+    color: white;
+    padding: 1%;
+    border-radius: 25px;
+    border: none;
+    background-size: cover;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);*/
+}
+
+    .tiles a p{
+        width: 60%;
+    }
+
+    .tiles a:hover{
+        scale: 1.05;
+    }
+
+    .tiles a.news{
+        background-color: dodgerblue;
+    }
+
+    .tiles a.FT{
+        background-image: url("assets/formula.jpg");
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+
+    .tiles a.KT{
+        background-image: url("assets/karting.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .tiles a.MC{
+        background-image: url("assets/mecanique.jpg");
+        background-position: 60%;
+        background-repeat: no-repeat;
+    }
+

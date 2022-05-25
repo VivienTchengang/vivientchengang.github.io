@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Icam Racing</title>
+		<link rel="stylesheet" type="text/css" href="race.css" />
+	</head>
+
+	<body>
+
+		<nav class="banner">
+			<a>
+				<span class="open-side">
+					<a href="#" onclick="openSideMenu()">
+						<svg width="30" height="30">
+							<path d="M0,10 30,10" stroke="#F29400" stroke-width="3"/>
+							<path d="M0,17 30,17" stroke="#F29400" stroke-width="3"/>
+							<path d="M0,24 30,24" stroke="#F29400" stroke-width="3"/>
+						</svg>
+					</a>
+				</span>
+			</a>
+			<a  id="title">
+				<h1>Icam Racing</h1>
+			</a>
+		</nav>
+
+
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<a href="#" onclick="window.location.href = 'index.html';">Accueil</a>
+			<a href="#" onclick="window.location.href = 'competition.html';">Compétitions</a>
+			<a href="#" onclick="window.location.href = 'teams.html';">Équipes</a>
+			<a href="#" onclick="window.location.href = 'cars.html';">Voitures</a>
+			<a href="#" onclick="window.location.href = 'news.html';">Actualité</a>
+			<a href="#" onclick="window.location.href = 'files.html';">Dossiers</a>
+			<a href="#" onclick="window.location.href = 'sponsors.html';">Partenaires</a>
+			<a href="#" onclick="window.location.href = 'contact.html';">Contact</a>
+		</div>
+
+		<script>
+			function openSideMenu(){
+				document.getElementById('side-menu').style.width='25%';
+				document.getElementById('title').style.paddingLeft='25%';
+			}
+			function closeSideMenu(){
+				document.getElementById('side-menu').style.width='0';
+				document.getElementById('title').style.paddingLeft='10px';
+			}
+		</script>
+
+		<div class="main">
+			<h1>Voitures</h1>
+
+			<h2>IRFS-01</h2>
+			<div class="description">
+				<p>
+					Style '80s, IRFS-01 est (sera) notre première monoplace de course, conçue pour la Formula Student.<br>
+					Bien entendu, il y aura des photos pour la version finale.
+				</p>
+			</div>
+
+		</div>
+
+	</body>
+</html>

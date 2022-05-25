@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Icam Racing</title>
+		<link rel="stylesheet" type="text/css" href="race.css" />
+	</head>
+
+	<body>
+
+		<nav class="banner">
+			<a>
+				<span class="open-side">
+					<a href="#" onclick="openSideMenu()">
+						<svg width="30" height="30">
+							<path d="M0,10 30,10" stroke="#F29400" stroke-width="3"/>
+							<path d="M0,17 30,17" stroke="#F29400" stroke-width="3"/>
+							<path d="M0,24 30,24" stroke="#F29400" stroke-width="3"/>
+						</svg>
+					</a>
+				</span>
+			</a>
+			<a  id="title">
+				<h1>Icam Racing</h1>
+			</a>
+		</nav>
+
+
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<a href="#" onclick="window.location.href = 'index.html';">Accueil</a>
+			<a href="#" onclick="window.location.href = 'competition.html';">Compétitions</a>
+			<a href="#" onclick="window.location.href = 'teams.html';">Équipes</a>
+			<a href="#" onclick="window.location.href = 'cars.html';">Voitures</a>
+			<a href="#" onclick="window.location.href = 'news.html';">Actualité</a>
+			<a href="#" onclick="window.location.href = 'files.html';">Dossiers</a>
+			<a href="#" onclick="window.location.href = 'sponsors.html';">Partenaires</a>
+			<a href="#" onclick="window.location.href = 'contact.html';">Contact</a>
+		</div>
+
+		<script>
+			function openSideMenu(){
+				document.getElementById('side-menu').style.width='25%';
+				document.getElementById('title').style.paddingLeft='25%';
+			}
+			function closeSideMenu(){
+				document.getElementById('side-menu').style.width='0';
+				document.getElementById('title').style.paddingLeft='10px';
+			}
+		</script>
+
+		<div class="main">
+			<h1>Formula Team</h1>
+
+			<h2>Histoire</h2>
+
+			<div class="description">
+				<p>
+					Copié de la plaquette, ce texte n'a pour le moment qu'une valeur décorative.<br>Une photo à droite serait bien aussi<br><br>
+
+					<em>"</em>L’association Icam Racing est un projet, à l’initiative de deux étudiants
+								passionnés de mécanique et dotés chacun de grandes ambitions.<br>
+								Cette association est née de la rencontre de deux rêves : celui d’un étudiant, bercé
+								par la formule 1 depuis sa plus tendre enfance, et qui est animé par la vision sportive
+								des sports mécaniques avec le pilotage. Son souhait était de pouvoir participer à
+								une compétition internationale de pilotage automobile.<br>
+								L’autre rêve est celui d’un jeune passionné par les aspects de conception et de
+								recherche, et qui voulait à tout prix créer sa propre voiture.
+								Camarades de la même promotion en 2021 à l’Icam site de Toulouse, ces deux
+								rêveurs décident de mettre à profit leurs connaissances et leurs envies communes
+								dans un projet unique : Icam Racing Fomula Team, la première écurie automobile
+								de l’Icam, un groupe d’écoles d’ingénieurs généralistes.<br>
+								Un tel projet a provoqué un fort engouement initial dû à l’ambition de
+								participer à la Formula Student. Mais rien ne fut facile. Au-delà de l’enthousiasme
+								que suscite naturellement un tel projet, il a fallu déceler les étudiants dont
+								l’investissement était réel et qui étaient capables de s’investir sur le long terme,
+								en effectuant aussi bien des travaux attractifs que des tâches moins stimulantes.
+								Cette rigueur dans le recrutement et les objectifs fixés ont permis d’imposer
+								l’association comme leader du pôle associatif ingénierie au sein de l’Icam.<br>
+								L’association compte plusieurs étudiants provenant de différents parcours
+								et promotions. Les parcours sont les suivants : le parcours ouvert, basé sur la
+								pédagogie de projet et les échanges l’internationaux ; le parcours apprentissage,
+								structuré sur l’alternance et la pratique avec du terrain ; le parcours intégré, fondé
+								sur l’étude rigoureuse des théories.<br>
+								Cette diversité nous permet de rassembler des profils variés et de nous
+								appuyer sur les facultés et les connaissances de chacun, afin d’être complémentaire
+								et d’atteindre nos objectifs.<em>"</em>
+				</p>
+			</div>
+
+			<h2>Organisation</h2>
+			<div class="description">
+				<p>
+					Pôle communication, pôle finance, you name it
+				</p>
+			</div>
+
+			<h2>Philosophie</h2>
+			<div class="description">
+				<p>
+					Même histoire, il s'agit seulement d'un squelette
+				</p>
+			</div>
+
+		</div>
+
+	</body>
+</html>

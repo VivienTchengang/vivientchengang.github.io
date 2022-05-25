@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Icam Racing</title>
+		<link rel="stylesheet" type="text/css" href="race.css" />
+	</head>
+
+	<body>
+
+		<nav class="banner">
+			<a>
+				<span class="open-side">
+					<a href="#" onclick="openSideMenu()">
+						<svg width="30" height="30">
+							<path d="M0,10 30,10" stroke="#F29400" stroke-width="3"/>
+							<path d="M0,17 30,17" stroke="#F29400" stroke-width="3"/>
+							<path d="M0,24 30,24" stroke="#F29400" stroke-width="3"/>
+						</svg>
+					</a>
+				</span>
+			</a>
+			<a  id="title">
+				<h1>Icam Racing</h1>
+			</a>
+		</nav>
+
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<a href="#" onclick="window.location.href = 'index.html';">Accueil</a>
+			<a href="#" onclick="window.location.href = 'competition.html';">Compétitions</a>
+			<a href="#" onclick="window.location.href = 'teams.html';">Équipes</a>
+			<a href="#" onclick="window.location.href = 'cars.html';">Voitures</a>
+			<a href="#" onclick="window.location.href = 'news.html';">Actualité</a>
+			<a href="#" onclick="window.location.href = 'files.html';">Dossiers</a>
+			<a href="#" onclick="window.location.href = 'sponsors.html';">Partenaires</a>
+			<a href="#" onclick="window.location.href = 'contact.html';">Contact</a>
+		</div>
+
+		<script>
+			function openSideMenu(){
+				document.getElementById('side-menu').style.width='25%';
+				document.getElementById('title').style.paddingLeft='25%';
+			}
+			function closeSideMenu(){
+				document.getElementById('side-menu').style.width='0';
+				document.getElementById('title').style.paddingLeft='10px';
+			}
+		</script>
+
+		<div class="description">
+			<p>
+				L’association <em>Icam Racing</em> rassemble les étudiants Icam passionnés de mécanique. Initialement créée pour prendre part à la compétition <em>Formula Student</em>,
+				Icam Racing comprend trois équipes: Formula Team, Karting Team, et le club de mécanique. Ici, vous pourrez découvrir les motivations à l'origine de ce projet,
+				et même y <em>participer</em>.<br>
+				Que l'aventure commence.
+			</p>
+		</div>
+
+		<div class="main">
+			<div class="tiles">
+				<a class="FT" onclick="window.location.href = 'formula.html';" type="button">
+					<h2>Formula Team</h2>
+					<p class="about">Lorem Ipsum, tatati tatata, no habla espanol</p>
+				</a>
+				<a class="KT" onclick="window.location.href = 'karting.html';" type="button">
+					<h2>Karting Team</h2>
+					<p class="about">Lorem Ipsum, tatati tatata, no habla espanol</p>
+				</a>
+				<a class="MC" onclick="window.location.href = 'mecanique.html';" type="button">
+					<h2>Mécanique</h2>
+					<p class="about">Lorem Ipsum, tatati tatata, no habla espanol</p>
+				</a>
+			</div>
+		</div>
+
+	</body>
+</html>

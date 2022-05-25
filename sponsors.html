@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Icam Racing</title>
+		<link rel="stylesheet" type="text/css" href="race.css" />
+	</head>
+
+	<body>
+
+		<nav class="banner">
+			<a>
+				<span class="open-side">
+					<a href="#" onclick="openSideMenu()">
+						<svg width="30" height="30">
+							<path d="M0,10 30,10" stroke="#F29400" stroke-width="3"/>
+							<path d="M0,17 30,17" stroke="#F29400" stroke-width="3"/>
+							<path d="M0,24 30,24" stroke="#F29400" stroke-width="3"/>
+						</svg>
+					</a>
+				</span>
+			</a>
+			<a  id="title">
+				<h1>Icam Racing</h1>
+			</a>
+		</nav>
+
+
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<a href="#" onclick="window.location.href = 'index.html';">Accueil</a>
+			<a href="#" onclick="window.location.href = 'competition.html';">Compétitions</a>
+			<a href="#" onclick="window.location.href = 'teams.html';">Équipes</a>
+			<a href="#" onclick="window.location.href = 'cars.html';">Voitures</a>
+			<a href="#" onclick="window.location.href = 'news.html';">Actualité</a>
+			<a href="#" onclick="window.location.href = 'files.html';">Dossiers</a>
+			<a href="#" onclick="window.location.href = 'sponsors.html';">Partenaires</a>
+			<a href="#" onclick="window.location.href = 'contact.html';">Contact</a>
+		</div>
+
+		<script>
+			function openSideMenu(){
+				document.getElementById('side-menu').style.width='25%';
+				document.getElementById('title').style.paddingLeft='25%';
+			}
+			function closeSideMenu(){
+				document.getElementById('side-menu').style.width='0';
+				document.getElementById('title').style.paddingLeft='10px';
+			}
+		</script>
+
+		<div class="main">
+			<h1>Partenaires</h1>
+
+			<h2>Nous soutenir</h2>
+			<div class="description">
+				<p>
+					La course n'est pas gratuite, mais vous pouvez nous aider à la rendre gratuite
+				</p>
+				<a href="assets/ebook.pdf" download="IcamRacing">PayPal</a>
+			</div>
+
+			<h2>Nos partenaires</h2>
+			<div class="description">
+				<p>
+					Une liste de noms avec des logos, ça rend toujours bien
+				</p>
+			</div>
+
+			<h2>Nos parrains</h2>
+			<div class="description">
+				<p>
+					Ils nous ont fait une offre qu'on a pas pu refuser
+				</p>
+			</div>
+
+		</div>
+
+	</body>
+</html>
